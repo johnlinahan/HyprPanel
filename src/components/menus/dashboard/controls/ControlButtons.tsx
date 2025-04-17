@@ -1,6 +1,5 @@
 import { bind } from 'astal';
 import { isWifiEnabled } from './helpers';
-import AstalNotifd from 'gi://AstalNotifd?version=0.1';
 import AstalBluetooth from 'gi://AstalBluetooth?version=0.1';
 import AstalNetwork from 'gi://AstalNetwork?version=0.1';
 import AstalWp from 'gi://AstalWp?version=0.1';
@@ -13,7 +12,6 @@ const networkService = AstalNetwork.get_default();
 
 const bluetoothService = AstalBluetooth.get_default();
 
-const notifdService = AstalNotifd.get_default();
 
 export const WifiButton = (): JSX.Element => {
     return (
@@ -54,28 +52,6 @@ export const BluetoothButton = (): JSX.Element => {
             <label
                 className={'txt-icon'}
                 label={bind(bluetoothService, 'isPowered').as((isEnabled) => (isEnabled ? '󰂯' : '󰂲'))}
-            />
-        </button>
-    );
-};
-
-export const NotificationsButton = (): JSX.Element => {
-    return (
-        <button
-            className={bind(notifdService, 'dontDisturb').as(
-                (dnd) => `dashboard-button notifications ${dnd ? 'disabled' : ''}`,
-            )}
-            onClick={(_, event) => {
-                if (isPrimaryClick(event)) {
-                    notifdService.set_dont_disturb(!notifdService.dontDisturb);
-                }
-            }}
-            tooltipText={'Toggle Notifications'}
-            expand
-        >
-            <label
-                className={'txt-icon'}
-                label={bind(notifdService, 'dontDisturb').as((dnd) => (dnd ? '󰂛' : '󰂚'))}
             />
         </button>
     );

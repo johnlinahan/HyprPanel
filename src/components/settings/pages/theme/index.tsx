@@ -6,7 +6,6 @@ import { StackTransitionMap } from 'src/components/settings/constants';
 import { MenuTheme } from './menus';
 import { Matugen } from './menus/matugen';
 import { BarTheme } from './bar';
-import { NotificationsTheme } from './notifications';
 import { OsdTheme } from './osd';
 import { BatteryMenuTheme } from './menus/battery';
 import { BluetoothMenuTheme } from './menus/bluetooth';
@@ -14,7 +13,6 @@ import { ClockMenuTheme } from './menus/clock';
 import { DashboardMenuTheme } from './menus/dashboard';
 import { MediaMenuTheme } from './menus/media';
 import { NetworkMenuTheme } from './menus/network';
-import { NotificationsMenuTheme } from './menus/notifications';
 import { SystrayMenuTheme } from './menus/systray';
 import { VolumeMenuTheme } from './menus/volume';
 import { PowerMenuTheme } from './menus/power';
@@ -66,7 +64,6 @@ export const ThemesMenu = (): JSX.Element => {
                 <MenuTheme />
                 <Matugen />
                 <BarTheme />
-                <NotificationsTheme />
                 <OsdTheme />
                 <BatteryMenuTheme />
                 <BluetoothMenuTheme />
@@ -74,7 +71,6 @@ export const ThemesMenu = (): JSX.Element => {
                 <DashboardMenuTheme />
                 <MediaMenuTheme />
                 <NetworkMenuTheme />
-                <NotificationsMenuTheme />
                 <SystrayMenuTheme />
                 <VolumeMenuTheme />
                 <PowerMenuTheme />

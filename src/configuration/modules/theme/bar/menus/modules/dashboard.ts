@@ -51,10 +51,6 @@ export default {
             background: opt(primaryColors.sky),
             text: opt(secondaryColors.mantle),
         },
-        notifications: {
-            background: opt(primaryColors.yellow),
-            text: opt(secondaryColors.mantle),
-        },
         volume: {
             background: opt(primaryColors.maroon),
             text: opt(secondaryColors.mantle),

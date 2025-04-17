@@ -8,7 +8,6 @@ export default {
     },
     fallback: {
         executable: 'application-x-executable',
-        notification: 'dialog-information-symbolic',
         video: 'video-x-generic-symbolic',
         audio: 'audio-x-generic-symbolic',
     },
@@ -92,11 +91,6 @@ export default {
     },
     recorder: {
         recording: 'media-record-symbolic',
-    },
-    notifications: {
-        noisy: 'org.gnome.Settings-notifications-symbolic',
-        silent: 'notifications-disabled-symbolic',
-        message: 'chat-bubbles-symbolic',
     },
     trash: {
         full: 'user-trash-full-symbolic',

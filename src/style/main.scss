@@ -26,12 +26,8 @@
 @import 'scss/bar/workspace';
 @import 'scss/bar/window_title';
 @import 'scss/bar/systray';
-@import 'scss/bar/notifications';
 @import 'scss/bar/battery';
 @import 'scss/bar/style';
-
-//notifications
-@import 'scss/notifications/popups';
 
 //modules - menus
 @import 'scss/menus/menu';
@@ -41,7 +37,6 @@
 @import 'scss/menus/network';
 @import 'scss/menus/bluetooth';
 @import 'scss/menus/media';
-@import 'scss/menus/notifications';
 @import 'scss/menus/calendar';
 @import 'scss/menus/energy';
 @import 'scss/menus/dashboard';

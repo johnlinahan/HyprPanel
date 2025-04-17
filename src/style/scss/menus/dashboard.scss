@@ -257,14 +257,6 @@
                 );
             }
 
-            &.notifications {
-                background: if(
-                    $bar-menus-monochrome,
-                    $bar-menus-buttons-default,
-                    $bar-menus-menu-dashboard-controls-notifications-background
-                );
-            }
-
             &.playback {
                 background: if(
                     $bar-menus-monochrome,
@@ -298,17 +290,6 @@
                         $bar-menus-monochrome,
                         $bar-menus-buttons-default,
                         $bar-menus-menu-dashboard-controls-bluetooth-background
-                    ),
-                    0.5
-                );
-            }
-
-            &.notifications:hover {
-                background: transparentize(
-                    if(
-                        $bar-menus-monochrome,
-                        $bar-menus-buttons-default,
-                        $bar-menus-menu-dashboard-controls-notifications-background
                     ),
                     0.5
                 );
@@ -360,17 +341,6 @@
                             $bar-menus-monochrome,
                             $bar-menus-buttons-default,
                             $bar-menus-menu-dashboard-controls-bluetooth-background
-                        ),
-                        0.5
-                    );
-                }
-
-                &.notifications:hover {
-                    background: transparentize(
-                        if(
-                            $bar-menus-monochrome,
-                            $bar-menus-buttons-default,
-                            $bar-menus-menu-dashboard-controls-notifications-background
                         ),
                         0.5
                     );

@@ -1,4 +1,3 @@
-import AstalNotifd from 'gi://AstalNotifd?version=0.1';
 import AstalWp from 'gi://AstalWp?version=0.1';
 import { Command } from '../../types';
 import { execAsync, Gio, GLib } from 'astal';
@@ -6,12 +5,9 @@ import { checkDependencies } from './checkDependencies';
 import { getSystrayItems } from 'src/services/cli/helpers/systray';
 import { idleInhibit } from 'src/lib/window/visibility';
 import { errorHandler } from 'src/core/errors/handler';
-import { clearNotifications } from 'src/lib/shared/notifications';
 import options from 'src/configuration';
 import { listCpuTempSensors } from './listSensors';
 
-const { clearDelay } = options.notifications;
-const notifdService = AstalNotifd.get_default();
 const audio = AstalWp.get_default();
 
 export const utilityCommands: Command[] = [
@@ -24,39 +20,6 @@ export const utilityCommands: Command[] = [
         handler: (): string => {
             try {
                 return getSystrayItems() ?? 'No items found!';
-            } catch (error) {
-                errorHandler(error);
-            }
-        },
-    },
-    {
-        name: 'clearNotifications',
-        aliases: ['cno'],
-        description: 'Clears all of the notifications that currently exist.',
-        category: 'System',
-        args: [],
-        handler: (): string => {
-            try {
-                const allNotifications = notifdService.get_notifications();
-                clearNotifications(allNotifications, clearDelay.get());
-
-                return 'Notifications cleared successfully.';
-            } catch (error) {
-                errorHandler(error);
-            }
-        },
-    },
-    {
-        name: 'toggleDnd',
-        aliases: ['dnd'],
-        description: 'Toggled the Do Not Disturb mode for notifications.',
-        category: 'System',
-        args: [],
-        handler: (): string => {
-            try {
-                notifdService.set_dont_disturb(!notifdService.dontDisturb);
-
-                return notifdService.dontDisturb ? 'Enabled' : 'Disabled';
             } catch (error) {
                 errorHandler(error);
             }

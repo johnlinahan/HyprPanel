@@ -22,7 +22,6 @@ export const Controls = ({ isEnabled }: ControlsProps): JSXElement => {
         >
             <WifiButton />
             <BluetoothButton />
-            <NotificationsButton />
             <PlaybackButton />
             <MicrophoneButton />
         </box>

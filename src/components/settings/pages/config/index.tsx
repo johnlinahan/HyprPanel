@@ -7,7 +7,6 @@ import { ConfigPage, configPages } from '../../helpers';
 import { BarGeneral } from './general';
 import { BarSettings } from './bar';
 import { MediaMenuSettings } from './menus/media';
-import { NotificationSettings } from './notifications';
 import { OSDSettings } from './osd';
 import { VolumeMenuSettings } from './menus/volume';
 import { ClockMenuSettings } from './menus/clock';
@@ -61,7 +60,6 @@ export const SettingsMenu = (): JSX.Element => {
                 <BarGeneral />
                 <BarSettings />
                 <MediaMenuSettings />
-                <NotificationSettings />
                 <OSDSettings />
                 <VolumeMenuSettings />
                 <ClockMenuSettings />

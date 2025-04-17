@@ -5,16 +5,16 @@ export default opt<BarLayouts>({
     '1': {
         left: ['dashboard', 'workspaces', 'windowtitle'],
         middle: ['media'],
-        right: ['volume', 'clock', 'notifications'],
+        right: ['volume', 'clock'],
     },
     '2': {
         left: ['dashboard', 'workspaces', 'windowtitle'],
         middle: ['media'],
-        right: ['volume', 'clock', 'notifications'],
+        right: ['volume', 'clock'],
     },
     '0': {
         left: ['dashboard', 'workspaces', 'windowtitle'],
         middle: ['media'],
-        right: ['volume', 'network', 'bluetooth', 'battery', 'systray', 'clock', 'notifications'],
+        right: ['volume', 'network', 'bluetooth', 'battery', 'systray', 'clock'],
     },
 });

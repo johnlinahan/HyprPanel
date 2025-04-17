@@ -2,12 +2,11 @@ import { App } from 'astal/gtk3';
 import { Bar } from 'src/components/bar';
 import { forMonitors } from 'src/components/bar/utils/monitors';
 import { GdkMonitorService } from 'src/services/display/monitor';
-import Notifications from 'src/components/notifications';
 import OSD from 'src/components/osd/index';
 
 /**
  * Manages dynamic refresh of monitor-dependent components when monitor configuration changes.
- * Handles bars, notifications, OSD, and other monitor-aware components.
+ * Handles bars, OSD, and other monitor-aware components.
  * Includes debouncing, error recovery, and prevents concurrent refresh operations.
  */
 export class BarRefreshManager {
@@ -62,7 +61,6 @@ export class BarRefreshManager {
 
         try {
             this._destroyBars();
-            this._destroyNotificationWindow();
             this._destroyOsdWindow();
 
             const gdkMonitorService = GdkMonitorService.getInstance();
@@ -70,7 +68,6 @@ export class BarRefreshManager {
 
             await forMonitors(Bar);
 
-            Notifications();
             OSD();
         } catch (error) {
             console.error('[MonitorRefresh] Error during component refresh:', error);
@@ -91,17 +88,6 @@ export class BarRefreshManager {
     private _destroyBars(): void {
         const barWindows = App.get_windows().filter((window) => window.name.startsWith('bar-'));
         barWindows.forEach((window) => window?.destroy());
-    }
-
-    /**
-     * Removes the notifications window from the display
-     * Ensures proper cleanup before recreating notifications on new monitor configuration
-     */
-    private _destroyNotificationWindow(): void {
-        const notificationsWindow = App.get_window('notifications-window');
-        if (notificationsWindow !== null) {
-            notificationsWindow.destroy();
-        }
     }
 
     /**

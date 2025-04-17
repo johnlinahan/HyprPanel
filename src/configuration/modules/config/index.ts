@@ -1,7 +1,6 @@
 import { opt } from 'src/lib/options';
 import { ScalingPriority } from 'src/lib/options/types';
 import bar from './bar';
-import notifications from './notifications';
 import menus from './menus';
 
 export default {
@@ -20,5 +19,4 @@ export default {
     dummy: opt(true),
     bar,
     menus,
-    notifications,
 };

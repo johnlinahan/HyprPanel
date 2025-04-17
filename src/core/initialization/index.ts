@@ -1,6 +1,5 @@
 import { execAsync } from 'astal';
 import { Bar } from 'src/components/bar';
-import Notifications from 'src/components/notifications';
 import SettingsDialog from 'src/components/settings/index';
 import OSD from 'src/components/osd/index';
 import { handleRealization } from 'src/components/menus/shared/dropdown/helpers/helpers';
@@ -27,7 +26,6 @@ export class InitializationService {
 
             await Timer.measureAsync('Startup scripts', () => this._initializeStartupScripts());
 
-            Timer.measureSync('Notifications', () => Notifications());
             Timer.measureSync('OSD', () => OSD());
 
             await Timer.measureAsync('Bars', async () => {

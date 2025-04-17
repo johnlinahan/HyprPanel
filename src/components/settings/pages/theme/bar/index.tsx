@@ -260,29 +260,6 @@ export const BarTheme = (): JSX.Element => {
                 />
                 <Option opt={options.theme.bar.buttons.clock.border} title="Border" type="color" />
 
-                {/* Notifications Section */}
-                <Header title="Notifications" />
-                <Option
-                    opt={options.theme.bar.buttons.notifications.background}
-                    title="Background"
-                    type="color"
-                />
-                <Option
-                    opt={options.theme.bar.buttons.notifications.total}
-                    title="Notification Count"
-                    type="color"
-                />
-                <Option opt={options.theme.bar.buttons.notifications.icon} title="Icon" type="color" />
-                <Option
-                    opt={options.theme.bar.buttons.notifications.icon_background}
-                    title="Button Icon Background"
-                    subtitle={
-                        'Applies a background color to the icon section of the button.\n' +
-                        "Requires 'split' button styling."
-                    }
-                    type="color"
-                />
-                <Option opt={options.theme.bar.buttons.notifications.border} title="Border" type="color" />
             </box>
         </scrollable>
     );

@@ -104,14 +104,6 @@ export const BarGeneral = (): JSX.Element => {
                     increment={5}
                 />
                 <Option
-                    opt={options.theme.notification.scaling}
-                    title="Notifications"
-                    type="number"
-                    min={1}
-                    max={100}
-                    increment={5}
-                />
-                <Option
                     opt={options.theme.osd.scaling}
                     title="OSD"
                     type="number"
@@ -178,14 +170,6 @@ export const BarGeneral = (): JSX.Element => {
                 <Option
                     opt={options.theme.bar.menus.menu.clock.scaling}
                     title="Clock Menu"
-                    type="number"
-                    min={1}
-                    max={100}
-                    increment={5}
-                />
-                <Option
-                    opt={options.theme.bar.menus.menu.notifications.scaling}
-                    title="Notifications Menu"
                     type="number"
                     min={1}
                     max={100}

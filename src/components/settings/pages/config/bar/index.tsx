@@ -581,34 +581,6 @@ export const BarSettings = (): JSX.Element => {
                 <Option opt={options.bar.media.scrollUp} title="Scroll Up" type="string" />
                 <Option opt={options.bar.media.scrollDown} title="Scroll Down" type="string" />
 
-                {/* Notifications Section */}
-                <Header title="Notifications" />
-                <Option
-                    opt={options.theme.bar.buttons.notifications.enableBorder}
-                    title="Button Border"
-                    type="boolean"
-                />
-                <Option
-                    opt={options.bar.notifications.show_total}
-                    title="Show Total # of notifications"
-                    type="boolean"
-                />
-                <Option
-                    opt={options.bar.notifications.hideCountWhenZero}
-                    title="Auto Hide Label"
-                    subtitle="Hide label when zero notifications"
-                    type="boolean"
-                />
-                <Option
-                    opt={options.theme.bar.buttons.notifications.spacing}
-                    title="Inner Spacing"
-                    subtitle="Spacing between icon and label."
-                    type="string"
-                />
-                <Option opt={options.bar.notifications.rightClick} title="Right Click" type="string" />
-                <Option opt={options.bar.notifications.middleClick} title="Middle Click" type="string" />
-                <Option opt={options.bar.notifications.scrollUp} title="Scroll Up" type="string" />
-                <Option opt={options.bar.notifications.scrollDown} title="Scroll Down" type="string" />
             </box>
         </scrollable>
     );

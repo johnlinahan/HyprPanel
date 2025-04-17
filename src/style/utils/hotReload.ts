@@ -7,7 +7,6 @@ export const initializeHotReload = async (): Promise<void> => {
         `${SRC_DIR}/src/style/scss/bar`,
         `${SRC_DIR}/src/style/scss/common`,
         `${SRC_DIR}/src/style/scss/menus`,
-        `${SRC_DIR}/src/style/scss/notifications`,
         `${SRC_DIR}/src/style/scss/osd`,
         `${SRC_DIR}/src/style/scss/settings`,
         `${SRC_DIR}/src/style/scss/colors.scss`,

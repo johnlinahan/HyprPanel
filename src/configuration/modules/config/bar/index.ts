@@ -15,7 +15,6 @@ import media from './media';
 import microphone from './microphone';
 import netstat from './netstat';
 import network from './network';
-import notifications from './notifications';
 import power from './power';
 import ram from './ram';
 import storage from './storage';
@@ -42,7 +41,6 @@ export default {
     systray,
     clock,
     media,
-    notifications,
     customModules: {
         scrollSpeed: opt(5),
         microphone,

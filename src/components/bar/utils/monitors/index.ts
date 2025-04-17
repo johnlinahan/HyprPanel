@@ -26,7 +26,7 @@ export const getLayoutForMonitor = (monitor: number, layouts: BarLayouts): BarLa
     return {
         left: ['dashboard', 'workspaces', 'windowtitle'],
         middle: ['media'],
-        right: ['volume', 'network', 'bluetooth', 'battery', 'systray', 'clock', 'notifications'],
+        right: ['volume', 'network', 'bluetooth', 'battery', 'systray', 'clock'],
     };
 };
 

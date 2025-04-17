@@ -11,7 +11,6 @@ import bluetooth from './bluetooth';
 import systray from './systray';
 import battery from './battery';
 import clock from './clock';
-import notifications from './notifications';
 import separator from './separator';
 import worldclock from './worldclock';
 import cava from './cava';
@@ -59,7 +58,6 @@ export default {
     systray: systray,
     battery: battery,
     clock: clock,
-    notifications: notifications,
     separator: separator,
     modules: {
         microphone: microphone,

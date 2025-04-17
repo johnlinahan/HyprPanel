@@ -10,7 +10,6 @@ import battery from './modules/battery';
 import clock from './modules/clock';
 import dashboard from './modules/dashboard';
 import power from './modules/power';
-import notifications from './modules/notifications';
 
 export default {
     monochrome: opt(false),
@@ -36,6 +35,5 @@ export default {
         clock,
         dashboard,
         power,
-        notifications,
     },
 };

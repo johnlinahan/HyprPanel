@@ -25,7 +25,6 @@ export const dropdownMenuList = [
     'mediamenu',
     'networkmenu',
     'bluetoothmenu',
-    'notificationsmenu',
     'calendarmenu',
     'energymenu',
     'powerdropdownmenu',

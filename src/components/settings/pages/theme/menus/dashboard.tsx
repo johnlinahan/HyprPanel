@@ -153,16 +153,6 @@ export const DashboardMenuTheme = (): JSX.Element => {
                     type="color"
                 />
                 <Option
-                    opt={options.theme.bar.menus.menu.dashboard.controls.notifications.background}
-                    title="Notifications Button"
-                    type="color"
-                />
-                <Option
-                    opt={options.theme.bar.menus.menu.dashboard.controls.notifications.text}
-                    title="Notifications Button Text"
-                    type="color"
-                />
-                <Option
                     opt={options.theme.bar.menus.menu.dashboard.controls.volume.background}
                     title="Volume Button"
                     type="color"

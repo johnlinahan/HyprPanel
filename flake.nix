@@ -44,7 +44,6 @@
                 mpris
                 cava
                 network
-                notifd
                 powerprofiles
                 wireplumber
               ])

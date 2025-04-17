@@ -12,7 +12,6 @@ import { Menu } from '../modules/menu';
 import { Microphone } from '../modules/microphone';
 import { Netstat } from '../modules/netstat';
 import { Network } from '../modules/network';
-import { Notifications } from '../modules/notifications';
 import { Power } from '../modules/power';
 import { Ram } from '../modules/ram';
 import { ModuleSeparator } from '../modules/separator';
@@ -35,7 +34,6 @@ export function getCoreWidgets(): Record<string, WidgetFactory> {
         workspaces: (monitor: number) => WidgetContainer(Workspaces(monitor)),
         windowtitle: () => WidgetContainer(ClientTitle()),
         media: () => WidgetContainer(Media()),
-        notifications: () => WidgetContainer(Notifications()),
         volume: () => WidgetContainer(Volume()),
         network: () => WidgetContainer(Network()),
         bluetooth: () => WidgetContainer(Bluetooth()),

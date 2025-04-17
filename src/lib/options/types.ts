@@ -22,7 +22,6 @@ export type BarModule =
     | 'workspaces'
     | 'windowtitle'
     | 'media'
-    | 'notifications'
     | 'volume'
     | 'network'
     | 'bluetooth'
@@ -52,15 +51,6 @@ export type BarLayouts = {
 };
 
 export type PowerOptions = 'sleep' | 'reboot' | 'logout' | 'shutdown';
-export type NotificationAnchor =
-    | 'top'
-    | 'top right'
-    | 'top left'
-    | 'bottom'
-    | 'bottom right'
-    | 'bottom left'
-    | 'left'
-    | 'right';
 export type OSDAnchor =
     | 'top left'
     | 'top'
@@ -195,8 +185,6 @@ export type MatugenVariation = {
     base: HexColor;
     mantle: HexColor;
     crust: HexColor;
-    notifications_closer?: HexColor;
-    notifications_background?: HexColor;
     dashboard_btn_text?: HexColor;
     red2: HexColor;
     peach2: HexColor;

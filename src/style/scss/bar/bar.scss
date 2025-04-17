@@ -115,13 +115,6 @@ $transparency-value-hover: 1 - $bar-button-background-hover-opacity-ratio;
         );
     }
 
-    &.notifications {
-        background-color: transparentize(
-            if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-notifications-background),
-            $transparency-value
-        );
-    }
-
     &.systray {
         background-color: transparentize(
             if($bar-buttons-monochrome, $bar-buttons-background, $bar-buttons-systray-background),
